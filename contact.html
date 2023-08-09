@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title>PetsCation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="ico.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body>
+    <div id="wrap">
+    	<nav>
+    		<div class="logo">
+    		<img src="petcation2.jpg" alt="">
+    		</div>
+    		<button type="button" class="btn-hamburger" data-action="nav-toggle">
+    			<span></span>
+    			<span></span>
+    			<span></span>
+    			<span></span>
+    			<span></span>
+    		</button>
+    		<ul class="nav-menu">
+    			<li class="nav-item"><a href="index.html">Home</a></li>
+    			<li class="nav-item"><a href="about.html">Book now</a></li>
+    			<li class="nav-item"><a href="contact.html">Contact us</a></li>
+          <li class="nav-item"><a href="pay.html">Payment</a></li>
+    			<li class="nav-item dropdown">
+    				<a href="#" data-action="dropdown-toggle">Our service</a>
+    				<div class="dropdown-menu">
+    					<a class="dropdown-item" href="boarding.html">Boarding</a>
+    					<a class="dropdown-item" href="daycare.html">Daycare</a>
+              <a class="dropdown-item" href="grooming.html">Grooming</a>
+    				</div>
+    			</li>
+    		</ul>
+    	</nav>
+
+      <div class="container">
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    	</div>
+    </div>
+    <br><br>
+<center><h1>We provide the best care when you are not there</h1></center>
+<br><br><br>
+<center><h1>Contact</h1></center>
+<br><br><br>
+<center><h2>email: petcationn@gmail.com</h2></center><br>
+<center><h2>phone: +961 70 481 230</h2></center>
+<br><br><br><br>
+<center>
+  <form action="mailto:petcationn@gmail.com" method="post" enctype="text/plain">
+      Your name:<br>
+      <input type="text" name="Name" placeholder="Your Name"><br>
+    Email:<br>
+      <input type="email" name="email" placeholder="Your Email"><br>
+      Message:<br>
+      <textarea name="service" rows="5" cols="30" placeholder="wright the service you want and the date from when till when"></textarea><br>
+      <input type="submit" value="Send">
+    </form>
+</center>
+    <hr style="border: 10px solid #FCA402; border-radius: 5px;"><br><br>
+    <footer class="footer">
+       <div class="container2">
+        <div class="row">
+          <div class="footer-col">
+            <h4>about us</h4>
+            <ul>
+     <li>
+       While we are aware that
+       you adore your pets, we
+       also recognize that there may
+       be times when you are
+       either too busy or temporarily
+       unable to care for them. Petscation
+       is always willing to help.
+     </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>our services</h4>
+            <ul>
+
+      <li>
+      PetsCation is a pet sitting group
+      that provide services like
+      daycare bording grooming .
+      </li>
+
+
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact us</h4>
+            <ul>
+
+    <li>
+    contact us on <br>
+    phone number: +961 70 481 230 <br>
+    or +961 70278008 <br>
+    email:petcationn@gmail.com
+    </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/people/PetCation/100091050369321/?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com/pet_cation?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+
+              <a class="btn btn-primary" style="background-color: ;" href="https://api.whatsapp.com/send/?phone=70278008&text&type=phone_number&app_absent=0" role="button"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+
+            </div>
+          </div>
+        </div>
+       </div>
+     </footer>
+       <script>
+         let nav = document.querySelector('nav');
+       let dropdown = nav.querySelector('.dropdown');
+       let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+       let navToggle = nav.querySelector("[data-action='nav-toggle']");
+
+       dropdownToggle.addEventListener('click', () => {
+       	if (dropdown.classList.contains('show')) {
+       		dropdown.classList.remove('show');
+       	} else {
+       		dropdown.classList.add('show');
+       	}
+       })
+
+       navToggle.addEventListener('click', () => {
+       	if (nav.classList.contains('opened')) {
+       		nav.classList.remove('opened');
+       	} else {
+       		nav.classList.add('opened');
+       	}
+       })
+       </script>
+  </body>
+</html>
